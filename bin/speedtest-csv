@@ -155,7 +155,7 @@ else
         mdebug "Reusing existing results: $log"
     else
         # Query Speedtest
-	cmd="speedtest-cli $opts"
+	cmd="/usr/local/bin/speedtest-cli $opts"
         mdebug "Querying Speedtest using '$cmd'"
         $cmd > $log
 	status=$?
